@@ -2,7 +2,7 @@
 // can be an array
 // or can take single value for each subject
 function ConvertToTitleCase(str) {
-    let convertedText= str.toLowerCase().split(' ').map(function(element) {
+    let convertedText= str.split(' ').map(function(element) {
       return (element.charAt(0).toUpperCase() + element.slice(1).toLowerCase());
     }).join(' ');
     return convertedText
@@ -48,6 +48,6 @@ class StudentES6{
         console.log("report card ",`\ntotal marks ${totalMarks} \npercentage ${percentage} \ngrade ${grade}`);
      }
 }
-var s1=new Student("sAm bAnSal",{subject1:1,subject2:2,subject3:3},123);
+var s1=new Student("sAm bAnSal",{subject1:3,subject2:5,subject3:7},123);
 s1.print();
 s1.calculations();
